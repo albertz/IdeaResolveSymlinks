@@ -8,7 +8,8 @@ even in the case it is already opened.
 
 There are a number of related bug reports,
 such as:
-https://youtrack.jetbrains.com/issue/IDEA-256182
+[#256182](https://youtrack.jetbrains.com/issue/IDEA-256182),
+[#141650](https://youtrack.jetbrains.com/issue/IDEA-141650)
 
 This IDEA plugin resolves at least the open issues,
 by always resolving all symlinks.
