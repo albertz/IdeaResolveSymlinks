@@ -1,0 +1,32 @@
+<idea-plugin>
+  <id>org.albertzeyer.IdeaResolveSymlinks</id>
+  <name>IDEA Resolve Symlinks</name>
+  <version>1.0</version>
+  <vendor email="albzey@gmail.com" url="http://www.az2000.de">Albert Zeyer</vendor>
+
+  <description>Resolve symlinks on opened files
+    such that you do not end up having the same file opened multiple times
+    under different file paths (due to symlinks).</description>
+
+  <change-notes>Initial</change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="193.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <applicationService serviceImplementation="FileOpenListener"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <applicationListeners>
+    <listener class="FileOpenListener" topic="com.intellij.openapi.project.ProjectManagerListener"/>
+  </applicationListeners>
+</idea-plugin>
