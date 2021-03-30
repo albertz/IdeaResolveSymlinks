@@ -1,4 +1,4 @@
-Situation:
+# Problem / Situation
 
 You click on some file which is a symlink
 to some project files.
@@ -20,3 +20,9 @@ such as:
 
 This IDEA plugin resolves at least the open issues,
 by always resolving all symlinks.
+
+# Installation
+
+* Download the latest zipped JAR file from the [releases](https://github.com/albertz/IdeaResolveSymlinks/releases).
+* Unzip, so you get the JAR file.
+* In the IDE, select Settings or Preferences -> Plugins -> Install Plugin from Disk ..., select the JAR file.
