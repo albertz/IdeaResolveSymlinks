@@ -24,12 +24,14 @@ public class FileOpenListener implements ProjectManagerListener {
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
-                            System.out.println("Symlink resolved: " + path + " -> " + realPath);
-                            if (realPath != null && !realPath.toString().equals(path.toString())) {
-                                source.closeFile(file);
-                                VirtualFile realPathFile = file.getFileSystem().findFileByPath(realPath.toString());
-                                if(realPathFile != null)
-                                    source.openFile(realPathFile, true);
+                            if(realPath != null) {
+                                System.out.println("Symlink resolved: " + path + " -> " + realPath);
+                                if(!realPath.toString().equals(path.toString())) {
+                                    source.closeFile(file);
+                                    VirtualFile realPathFile = file.getFileSystem().findFileByPath(realPath.toString());
+                                    if (realPathFile != null)
+                                        source.openFile(realPathFile, true);
+                                }
                             }
                         }
                     }
