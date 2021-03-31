@@ -23,6 +23,14 @@ by always resolving all symlinks.
 
 # Installation
 
+## Marketplace
+
+The plugin is available in the marketplace [here](https://plugins.jetbrains.com/plugin/16429-idea-resolve-symlinks).
+In the IDE, select Settings or Preferences -> Plugins -> Marketplace, search for "IDEA Resolve Symlinks",
+and you should find it.
+
+## Manual
+
 * Download the latest zipped JAR file from the [releases](https://github.com/albertz/IdeaResolveSymlinks/releases).
 * Unzip, so you get the JAR file.
 * In the IDE, select Settings or Preferences -> Plugins -> Install Plugin from Disk ..., select the JAR file.
