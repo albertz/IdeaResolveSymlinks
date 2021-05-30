@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>org.albertzeyer.IdeaResolveSymlinks</id>
   <name>IDEA Resolve Symlinks</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <vendor email="albzey@gmail.com" url="http://www.az2000.de">Albert Zeyer</vendor>
 
   <description>Resolve symlinks on opened files
