@@ -20,6 +20,8 @@
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
     <applicationService serviceImplementation="FileOpenListener"/>
+    <applicationService serviceImplementation="DebuggerManagerListener"/>
+    <applicationService serviceImplementation="ProjectOpenerListener"/>
   </extensions>
 
   <actions>
@@ -28,5 +30,8 @@
 
   <applicationListeners>
     <listener class="FileOpenListener" topic="com.intellij.openapi.fileEditor.FileEditorManagerListener"/>
+    <listener class="DebugStackFrameChangedListener" topic="com.intellij.xdebugger.XDebugSessionListener"/>
+    <listener class="DebuggerManagerListener" topic="com.intellij.xdebugger.XDebuggerManagerListener"/>
+    <listener class="ProjectOpenerListener" topic="com.intellij.openapi.project.ProjectManagerListener"/>
   </applicationListeners>
 </idea-plugin>
