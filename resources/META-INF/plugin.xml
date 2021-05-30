@@ -27,6 +27,6 @@
   </actions>
 
   <applicationListeners>
-    <listener class="FileOpenListener" topic="com.intellij.openapi.project.ProjectManagerListener"/>
+    <listener class="FileOpenListener" topic="com.intellij.openapi.fileEditor.FileEditorManagerListener"/>
   </applicationListeners>
 </idea-plugin>
